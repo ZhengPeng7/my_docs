@@ -1,0 +1,138 @@
+%% start of file `resume.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+% Peng Zheng's Resume
+
+ 
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+  % moderncv 主题
+  \moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+  \moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+  %\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+  
+  % 字符编码
+  \usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+  \usepackage{CJKutf8}
+  
+  % 调整页边距
+  \usepackage[scale=0.75]{geometry}
+  %\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+  
+  % 个人信息
+  \name{}{郑鹏}
+  \title{简历}                     % 可选项、如不需要可删除本行
+  % \address{街道及门牌号}{邮编及城市}            % 可选项、如不需要可删除本行
+  % \phone[mobile]{+1~(234)~567~890}              % 可选项、如不需要可删除本行
+  % \phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+  % \phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+  % \email{xiaolong@li.com.cn}                    % 可选项、如不需要可删除本行
+  % \homepage{www.xialongli.com}                  % 可选项、如不需要可删除本行
+  % \extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
+  \photo[94pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+  % \quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+  
+  % 显示索引号;仅用于在简历中使用了引言
+  %\makeatletter
+  %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+  %\makeatother
+  
+  % 分类索引
+  %\usepackage{multibib}
+  %\newcites{book,misc}{{Books},{Others}}
+  %----------------------------------------------------------------------------------
+  %            内容
+  %----------------------------------------------------------------------------------
+  \begin{document}
+  \begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+  \maketitle
+
+  \section{个人信息}
+  \cvdoubleitem{性别:}{男}{籍贯:}{江苏省盐城市}
+  \cvdoubleitem{出生年月:}{1998-01-08}{手机号:}{157 3211 5701}
+  \cvdoubleitem{本科学校:}{河北师范大学}{学院:}{软件学院}
+  \cvdoubleitem{e-mail:}{15732115701@163.com}{Github:}{https://github.com/ZhengPeng7}
+
+  
+  \section{在校学习成绩与省国级竞赛获奖情况}
+  \cvitem{成绩:}{全学院$ \frac{14}{379} $}
+  \cvitem{大一:}{全国大学生英语竞赛二等奖}
+  \cvitem{大二:}{蓝桥杯程序设计大赛省二等奖}
+  \cvitem{大三:}{河北省大数据竞赛三等奖, 全国大学生数学建模河北省二等奖}
+
+
+  \section{校园生活}
+  \cvitem{学业拓展:}{大二上起一直坚持学习Coursera课程, 高分结业包括但不局限于Andrew老师的Machine Learning、DeepLearning.ai Specialization等多门课程}
+  \cvitem{校内职务:}{作为图书馆读者协会优秀成员, 参与负责图书馆报纸的撰稿、编排、印刷}
+  \cvitem{}{参与负责七弦吉他社组织授课等}
+  \cvitem{业余生活:}{获得学软件学院程序设计大赛一等奖、网页设计大赛一等奖等}
+  \cvitem{}{全校单词大比拼一等奖， 星火行诗歌展三等奖等, 图书馆书香暑假二等奖等等}
+  \cvitem{文学爱好:}{钟爱外国文学并较为广泛地涉猎之, 如卡夫卡}
+  
+  \section{语言技能}
+  \cvitemwithcomment{CET-4}{597}{}
+  \cvitemwithcomment{CET-6}{546}{}
+  \cvitemwithcomment{IELTS}{6.5 (8, 7, 5.5, 5.5)}{}
+  \cvitemwithcomment{}{}{}
+  
+  \section{专业技能}
+  \cvitem{编程语言:}{熟练使用 Python, MATLAB, 并掌握C/C++, Shell脚本等}
+  \cvitem{操作系统:}{熟练使用Linux, 了解awk, sed}
+  \cvitem{CV相关:}{熟练掌握CV基中阶算法原理, 并熟练使用OpenCV, scikit-image等库}
+  \cvitem{}{书籍涉猎包括但不局限于《Learning OpenCV》(Bradski),《数字图像处理》(Gonzalez),《Vision》(Marr)}
+  \cvitem{ML相关:}{掌握ML基本算法, 并较熟练掌握Keras, Tensorflow, scikit-learn等ML相关工具}
+  \cvitem{科研相关:}{较熟练使用Inkscape制作科研论文矢量图, 能够解决简单的{\LaTeX}问题}
+  
+  \section{个人项目(可见于个人Github)}
+  \cvitem{HCI\_lite:}{一个通过webcam进行实时人际交互的系统, 其功能主要包括艺术风格转换, 背景去除, 前景提取, 双目检测等}
+  \cvitem{车牌检识:}{基于传统图像处理, 包括基本形态学操作, 边缘提取, 浸水填充, Radon变换, 简单的NN字符识别等}
+  
+  \section{科研经历(可见于个人Github)}
+  \cvitem{叶脉提取:}{参与瑞典 Kempe 基金、基于深度学习的树叶基因特征检测研究}
+  \cvitem{}{主要进行叶脉提取, 并做曲率计算等相关数据收集工作}
+  \cvitem{}{发表相关论文一篇, 申请相关专利一项}
+  \cvitem{雾霾能见度:}{参与面向智能交通/无人驾驶的雾霾能见度检测研究}
+  \cvitem{}{主要负责实现前人提出的衡量能见度算法(如: 对比度等), 用于衬托新研究成果}
+  \cvitem{交通流预测:}{参与基于深度学习的交通视频大数据分析算法及其应用研究}
+  \cvitem{}{主要负责利用lstm实现对不同时段的交通流量进行预测}
+  \cvitem{建筑物理:}{参与面向智能楼宇的非侵入式检测技术研究}
+  \cvitem{}{主要负责基于皮肤图像等数据和DNN模型, 对室内温度进行回归预测的任务}
+
+  
+  \renewcommand{\listitemsymbol}{*}             % 改变列表符号
+  
+  \section{科研成果}{}
+  \cvitem{论文:}{《基于改进Canny算子的树叶叶脉提取算法研究》录用于《计算机应用研究》增刊, 一作}
+  \cvitem{专利:}{《基于窗口动态阈值改进Canny算子的叶脉提取算法》, 第一负责人, 申请中}
+  
+  \section{实习经历}{}
+  \cvitem{百度:}{2017年12月 至 2018年2月, 在北京百度网讯科技有限公司, 推荐技术平台部实习, 主要负责对上线图片依质量进行过滤、调整线上attention等工作}
+
+  \section{自我评价}{}
+  \cvitem{个人能力:}{具备接近入门的科研基础, 较扎实的英语能力、数理思维, 契而不舍的钻研精神}
+  \cvitem{处世为人:}{真诚待人, 乐于助人, 热衷于思想交流, 于自己有较高要求, 有自己的为人准则}
+  \cvitem{个人志向:}{脚踏实地地做事, 追求高而真的知识, 志于探清Vision的实质, 做一名Visioneer}
+
+  % 来自BibTeX文件但不使用multibib包的出版物
+  %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+  \nocite{*}
+  \bibliographystyle{plain}
+  \bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+  
+  % 来自BibTeX文件并使用multibib包的出版物
+  %\section{出版物}
+  %\nocitebook{book1,book2}
+  %\bibliographystylebook{plain}
+  %\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+  %\nocitemisc{misc1,misc2,misc3}
+  %\bibliographystylemisc{plain}
+  %\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+  
+  \clearpage\end{CJK}
+  \end{document}
+  
+  
+  %% 文件结尾 `template-zh.tex'.
